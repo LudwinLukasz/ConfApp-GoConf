@@ -1,0 +1,10 @@
+package com.springboot;
+import org.springframework.stereotype.Component;
+
+@Component
+public class WelcomeService {
+	public String retriveWelcomeMessage() {
+		// to bedzie skomplikowane
+		return "Good day! zamieszanie! i to wiekie";
+	}
+}

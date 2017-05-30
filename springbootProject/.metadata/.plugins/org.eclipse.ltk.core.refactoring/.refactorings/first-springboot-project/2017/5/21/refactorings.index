@@ -1,0 +1,31 @@
+1495641087445	Rename package 'com.in28minutes.springboot'
+1495642124476	Delete elements
+1495642210646	Rename package 'com.in28minutes.springboot.web'
+1495642376906	Copy compilation unit
+1495642388967	Delete element
+1495642489715	Move compilation unit
+1495642511954	Delete element
+1495651787947	Copy file
+1495652153261	Move 1 resources to 'jsp'
+1495652309001	Rename resource 'index.html'
+1495652949607	Delete element
+1495652962142	Delete element
+1495653143682	Rename compilation unit 'loginService.java'
+1495654897111	Rename compilation unit 'TodoService.java'
+1495737257602	Delete element
+1495740102752	Copy compilation unit
+1495789830666	Delete element
+1495790770966	Copy file
+1495790779529	Copy files
+1495790786797	Delete element
+1495790804841	Delete elements
+1495790972219	Delete element
+1495802168325	Delete element
+1495802202057	Delete elements
+1495802212101	Delete element
+1495802218514	Delete element
+1496001432668	Rename field 'role'
+1496004124314	Rename type 'confPaper'
+1496005403120	Copy file
+1496007153489	Copy file
+1496007643571	Rename resource 'add-paper.jsp'

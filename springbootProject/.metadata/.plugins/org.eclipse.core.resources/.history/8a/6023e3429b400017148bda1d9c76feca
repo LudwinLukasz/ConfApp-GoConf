@@ -1,0 +1,28 @@
+package com.springboot;
+
+import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.web.bind.annotation.RequestMapping;
+import org.springframework.web.bind.annotation.RestController;
+
+@RestController
+public class WelcomeController {
+	// to sie nazywa Dependency bo welcomeControler zależy od Welcome service
+	// Maven automatycznie troszczy sie o dependencies w pom'ie
+	// tu tworzona jest  instancja welcome service za pomoca new ... nie chcemy tego , chcemy 
+	// zeby sring sam stworzył sobie dependency bez new
+// tak było:	private WelcomeService service = new WelcomeService();
+	// teraz jak welcome service jest np interfejsem to moge inna implementacje zastosowac
+	//Injection
+	// spring tworzy w component na poczatku i jest gotowy do wstrzykniecia automatycznie jak potrzeba
+	//autowired
+	@Autowired
+	private WelcomeService service;
+	@RequestMapping("/welcome")
+	public String welcome() {
+		return service.retriveWelcomeMessage();
+	}
+}
+// component przeniesiony di serwisow do osobnej klasy i pakietu
+
+// Spring ma manage this bean and create instance of it
+// to sie robi przez anotacje component albo service

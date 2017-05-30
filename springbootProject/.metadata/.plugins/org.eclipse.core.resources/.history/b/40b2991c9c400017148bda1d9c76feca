@@ -1,0 +1,11 @@
+package com.springboot.web.controler;
+@Controller
+public class LoginController {
+
+    @RequestMapping(value = "/login")
+    @ResponseBody
+    public String sayHello() {
+        return "Hello World dummy";
+    }
+
+}

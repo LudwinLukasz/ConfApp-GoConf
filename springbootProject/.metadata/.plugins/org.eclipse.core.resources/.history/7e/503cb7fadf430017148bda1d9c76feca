@@ -1,0 +1,10 @@
+package com.springboot.web.jpa;
+
+	import java.util.List;
+
+	import org.springframework.data.repository.CrudRepository;
+
+	public interface UserRepository extends CrudRepository<User, Long> {
+		User findByRole(String role);
+		User findByName(String name);
+	}

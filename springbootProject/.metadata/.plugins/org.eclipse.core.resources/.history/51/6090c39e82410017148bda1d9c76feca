@@ -1,0 +1,23 @@
+package com.springboot.web.service;
+
+import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.stereotype.Component;
+
+import com.springboot.web.jpa.UserRepository;
+
+	@Component
+	public class LoginService2 {
+		//String password;
+//		private static HashMap<String, String> hashconfUsers = new HashMap<>();
+//		static {
+//	        hashconfUsers.put("profDummy1", "ala");
+//	        hashconfUsers.put("profDummy2", "ma");
+//	        hashconfUsers.put("profDummy3", "kota");
+//		}
+		 @Autowired
+		    private UserRepository repository;
+	    public boolean validateUser(String user, String password) {
+//	        
+	    	return password.equals(repository.findByUser(user).getRole());
+	    }
+	}

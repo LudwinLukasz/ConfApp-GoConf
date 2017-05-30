@@ -1,0 +1,5 @@
+package com.springboot.web.jpa;
+
+public class UserRepository {
+
+}
